@@ -3,6 +3,9 @@
   email = charles@3months.com
 [core]
   editor = subl -n -w
-  excludesfile = /Users/charles/.gitignore_global
+  excludesfile = /Users/starscream/.dotfiles/.gitignore_global
 [color]
   ui = true
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential

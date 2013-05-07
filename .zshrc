@@ -20,5 +20,6 @@ plugins=(git github rails3 rails ruby autojump bundler)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
