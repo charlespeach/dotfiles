@@ -12,8 +12,6 @@ alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias pingtest="ping 8.8.8.8"
 
-alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -22,3 +20,6 @@ plugins=(git github rails3 rails ruby autojump bundler)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
