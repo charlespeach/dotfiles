@@ -23,7 +23,7 @@ source $ZSH/oh-my-zsh.sh
 
 ### Paths
 # When using brew from boxen
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+#[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 # When using brew (not from boxen)
-# export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
