@@ -3,6 +3,6 @@
   email = charles@3months.com
 [core]
   editor = subl -n -w
-  excludesfile = /Users/starscream/.gitignore_global
+  excludesfile = /Users/charles/.gitignore_global
 [color]
   ui = true
