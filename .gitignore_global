@@ -9,4 +9,3 @@ config/database.yml
 # Ruby specific
 .rbenv-gemsets
 .ruby-version
-.rvmrc
