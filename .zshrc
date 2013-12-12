@@ -17,7 +17,7 @@ alias start_es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/confi
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github rails3 rails ruby autojump bundler)
+plugins=(git github rails ruby autojump bundler)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -29,3 +29,6 @@ source $ZSH/oh-my-zsh.sh
 # When using brew (not from boxen)
 export PATH=/usr/local/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Android sdk installed via brew (brew install android-sdk)
+export ANDROID_HOME=/usr/local/opt/android-sdk
