@@ -1,32 +1,22 @@
 {
-  // Colors
-  "color_scheme": "Packages/RailsCasts Colour Scheme/RailsCastsColorScheme.tmTheme",
-  "theme": "Soda Dark 3.sublime-theme",
-  "soda_folder_icons": true,
-
-  // Cursor style - slightly wider than default
-  "wide_caret": true,
-
-  // Sidebar
-  "bold_folder_labels": true,
-
-  // Font
-  "font_face": "Inconsolata",
-  "font_size": 20.0,
-
-  // Editor look and feel
-  "highlight_line": true,
-
-  // Editor behaviour
-  "hot_exit": false,
-  "ignored_packages": ["Vintage"],
-  "remember_open_files": false,
-  "save_on_focus_lost": true,
-  "word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~",
-
-  // Whitespace
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true,
-  "ensure_newline_at_eof_on_save": true
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/RailsCasts Colour Scheme/RailsCastsColorScheme.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Inconsolata",
+	"font_size": 20.0,
+	"highlight_line": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"remember_open_files": false,
+	"save_on_focus_lost": true,
+	"soda_folder_icons": true,
+	"tab_size": 2,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true,
+	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~"
 }
