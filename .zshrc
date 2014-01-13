@@ -11,6 +11,7 @@ ZSH_THEME="gallois"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias pingtest="ping 8.8.8.8"
+alias 3m="cd /Users/charles/Projects/3months"
 
 alias start_es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
 
