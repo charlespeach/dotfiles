@@ -3,12 +3,14 @@
 	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Inconsolata",
-	"font_size": 23.0,
+	"font_size": 22.0,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Sass",
 		"Markdown",
+		"Origami",
 		"Vintage"
 	],
 	"remember_open_files": false,
