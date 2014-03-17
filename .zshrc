@@ -12,6 +12,7 @@ alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias pingtest="ping 8.8.8.8"
 alias 3m="cd /Users/charles/Projects/3months"
+alias b="bundle exec"
 
 alias start_es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
 
@@ -33,3 +34,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Android sdk installed via brew (brew install android-sdk)
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+# added by travis gem
+[ -f /Users/charles/.travis/travis.sh ] && source /Users/charles/.travis/travis.sh
