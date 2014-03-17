@@ -9,3 +9,7 @@ config/database.yml
 # Ruby specific
 .rbenv-gemsets
 .ruby-version
+
+# iOS and Xcode specific
+Pods/
+xcuserdata/
