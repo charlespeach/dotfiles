@@ -2,18 +2,18 @@
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Inconsolata",
-	"font_size": 22.0,
+	"font_face": "Anonymous Pro",
+	"font_size": 18,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Vintage",
 		"Sass",
 		"Markdown",
-		"Origami",
-		"Vintage"
+		"Origami"
 	],
-	"remember_open_files": false,
+	"remember_open_files": true,
 	"save_on_focus_lost": true,
 	"soda_folder_icons": true,
 	"tab_size": 2,
