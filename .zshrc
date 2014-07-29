@@ -14,6 +14,13 @@ alias pingtest="ping 8.8.8.8"
 alias 3m="cd /Users/charles/Projects/3months"
 alias b="bundle exec"
 
+# fun little commands to turn on single app mode when using the dock
+alias single-win="defaults write com.apple.dock single-app -bool true && killall Dock"
+alias multi-win="defaults write com.apple.dock single-app -bool false && killall Dock"
+
+alias rsp="bundle exec rails s -e development_published -p3001 -P tmp/pids/server2.pid"
+alias rspd="bundle exec rails s -e development_published -p3001 -P tmp/pids/server2.pid --debugger"
+
 alias start_es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -26,14 +33,9 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 ### Paths
-# When using brew from boxen
-#[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-# When using brew (not from boxen)
+# When using brew
 export PATH=/usr/local/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# Android sdk installed via brew (brew install android-sdk)
-export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # added by travis gem
 [ -f /Users/charles/.travis/travis.sh ] && source /Users/charles/.travis/travis.sh
