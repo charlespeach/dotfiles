@@ -21,6 +21,8 @@ alias multi-win="defaults write com.apple.dock single-app -bool false && killall
 alias rsp="bundle exec rails s -e development_published -p3001 -P tmp/pids/server2.pid"
 alias rspd="bundle exec rails s -e development_published -p3001 -P tmp/pids/server2.pid --debugger"
 
+alias android-screen="adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Desktop/android-screenshot-`date +%Y-%m-%d_%H.%M.%S`.png"
+
 alias start_es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -39,3 +41,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # added by travis gem
 [ -f /Users/charles/.travis/travis.sh ] && source /Users/charles/.travis/travis.sh
+
+# Android sdk platform tools
+export PATH="/Applications/Android Studio.app/sdk/platform-tools":$PATH
