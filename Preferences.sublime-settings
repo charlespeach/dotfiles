@@ -1,17 +1,17 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	"color_scheme": "Packages/User/base16-ocean.dark (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Anonymous Pro",
-	"font_size": 18,
+	"font_size": 19,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Origami",
 		"Vintage",
-		"Sass",
 		"Markdown",
-		"Origami"
+		"Sass"
 	],
 	"remember_open_files": true,
 	"save_on_focus_lost": true,
