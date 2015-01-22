@@ -43,4 +43,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [ -f /Users/charles/.travis/travis.sh ] && source /Users/charles/.travis/travis.sh
 
 # Android sdk platform tools
-export PATH="/Applications/Android Studio.app/sdk/platform-tools":$PATH
+export PATH="/Users/charles/sdk/platform-tools":$PATH
