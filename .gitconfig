@@ -1,6 +1,6 @@
 [user]
   name = Charles Peach
-  email = charles@3months.com
+  email = me@charlespeach.com
 [core]
   editor = subl -n -w
   excludesfile = /Users/charles/.gitignore_global
