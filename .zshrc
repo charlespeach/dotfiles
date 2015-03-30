@@ -36,3 +36,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:$PATH
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/charlesp/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
