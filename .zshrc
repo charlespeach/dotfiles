@@ -11,7 +11,13 @@ ZSH_THEME="robbyrussell"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias pingtest="ping 8.8.8.8"
+alias pingpw="ping -c 1 8.8.8.8 | md5"
 alias b="bundle exec"
+
+
+# Disabling Airdrop completely because it causes more issues than it solves
+alias enableAD="defaults write com.apple.NetworkBrowser DisableAirDrop -bool NO && sudo ifconfig awdl0 up"
+alias disableAD="defaults write com.apple.NetworkBrowser DisableAirDrop -bool YES && sudo ifconfig awdl0 down"
 
 # work specific aliases
 alias loyal="cd ~/Loyalty"
@@ -41,3 +47,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/charlesp/.boot2docker/certs/boot2docker-vm
+
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export PATH="/usr/local/sbin:$PATH"
+
+export MEMCACHED_HOST=localhost:11211
