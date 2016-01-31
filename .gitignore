@@ -1,0 +1,2 @@
+# Exclude digital ocean export for now
+do_export.sh
