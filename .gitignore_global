@@ -6,9 +6,6 @@
 # Rails specific
 config/database.yml
 
-# Ruby specific
-.ruby-version
-
 # iOS and Xcode specific
 Pods/
 xcuserdata/
