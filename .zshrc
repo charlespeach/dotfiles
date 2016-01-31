@@ -14,6 +14,8 @@ alias pingtest="ping 8.8.8.8"
 alias pingpw="ping -c 1 8.8.8.8 | md5"
 alias b="bundle exec"
 
+alias test-do="sh ~/Personal/dotfiles/do_test.sh"
+alias export-do="sh ~/Personal/dotfiles/do_export.sh"
 
 # Disabling Airdrop completely because it causes more issues than it solves
 alias enableAD="defaults write com.apple.NetworkBrowser DisableAirDrop -bool NO && sudo ifconfig awdl0 up"
