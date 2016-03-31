@@ -46,7 +46,9 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=~/bin:$PATH
 
 export RBENV_ROOT=/usr/local/var/rbenv
-
-eval $(docker-machine env default)
+export PYENV_ROOT=/usr/local/var/pyenv
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+eval $(docker-machine env default)
