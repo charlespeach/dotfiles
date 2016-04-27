@@ -3,7 +3,7 @@
   email = me@charlespeach.com
 [core]
   editor = subl -n -w
-  excludesfile = /Users/charlesp/.gitignore_global
+  excludesfile = ~/.dotfiles/.gitignore_global
 [color]
   ui = true
 [filter "lfs"]
