@@ -14,8 +14,8 @@ alias pingtest="ping 8.8.8.8"
 alias pingpw="ping -c 1 8.8.8.8 | md5"
 alias b="bundle exec"
 
-alias test-do="sh ~/Personal/dotfiles/do_test.sh"
-alias export-do="sh ~/Personal/dotfiles/do_export.sh"
+alias test-do="sh ~/.dotfiles/do_test.sh"
+alias export-do="sh ~/.dotfiles/do_export.sh"
 
 # Disabling Airdrop completely because it causes more issues than it solves
 alias enableAD="defaults write com.apple.NetworkBrowser DisableAirDrop -bool NO && sudo ifconfig awdl0 up"
@@ -30,7 +30,7 @@ alias android-screen="adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/
 alias start_es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
 
 # work specific aliases
-alias crs="cd ~/Development/crs/"
+alias ml="cd ~/Melon/"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -45,10 +45,14 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=~/bin:$PATH
 
-export RBENV_ROOT=/usr/local/var/rbenv
-export PYENV_ROOT=/usr/local/var/pyenv
+export NVM_DIR="~/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export RBENV_ROOT=~/.rbenv
+export PYENV_ROOT=/.pyenv
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-eval $(docker-machine env default)
+# Commented out for now as I will need to setup docker again
+#eval $(docker-machine env default)
