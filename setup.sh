@@ -4,13 +4,18 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.irbrc ~/.irbrc
 ln -s ~/.dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 
-# Custom keyrepeat speeds
+#Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0.02
-defaults write NSGlobalDomain InitialKeyRepeat -i 12
-# Turn on developer tools
+
+#Set a shorter Delay until key repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
+
+#Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
-# Unhide library dir
+
+#Show the ~/Library folder
 chflags nohidden ~/Library
-# Setup screenshots to default to a folder on the desktop
+
+#Store screenshots in subfolder on desktop
 mkdir ~/Desktop/Screenshots
 defaults write com.apple.screencapture location ~/Desktop/Screenshots
