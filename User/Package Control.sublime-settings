@@ -1,0 +1,13 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"GitGutter",
+		"Package Control",
+		"Theme - Afterglow"
+	]
+}
