@@ -1,2 +1,10 @@
 # Exclude digital ocean export for now
 do_export.sh
+
+# Ignore some sublime settings
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
