@@ -14,6 +14,10 @@ alias pingtest="ping 8.8.8.8"
 alias pingpw="ping -c 1 8.8.8.8 | md5"
 alias b="bundle exec"
 
+# Start and stop apache
+alias starta="sudo apachectl start"
+alias stopa="sudo apachectl stop"
+
 alias test-do="sh ~/.dotfiles/do_test.sh"
 alias export-do="sh ~/.dotfiles/do_export.sh"
 
@@ -46,7 +50,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=~/bin:$PATH
 
 export RBENV_ROOT=~/.rbenv
-export PYENV_ROOT=/.pyenv
+export PYENV_ROOT=~/.pyenv
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi

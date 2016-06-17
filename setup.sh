@@ -43,3 +43,6 @@ start mysql
 
 # Secure mysql
 /usr/local/Cellar/mysql/5.7.12/bin/mysql_secure_installation
+
+
+## Some extra stuff (DNS Masq etc) from here https://mallinson.ca/osx-web-development/
