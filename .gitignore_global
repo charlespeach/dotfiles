@@ -3,9 +3,6 @@
 .DS_Store?
 .Spotlight-V100
 
-# Rails specific
-config/database.yml
-
 # iOS and Xcode specific
 Pods/
 xcuserdata/
