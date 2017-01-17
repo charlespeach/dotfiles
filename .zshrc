@@ -9,6 +9,7 @@ ZSH_THEME="robbyrussell"
 alias pingtest="ping 8.8.8.8"
 alias pingpw="ping -c 1 8.8.8.8 | md5"
 alias b="bundle exec"
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # Toggles for single app mode on the dock
 alias single-win="defaults write com.apple.dock single-app -bool true && killall Dock"
