@@ -8,9 +8,8 @@ This is a online backup/place to keep my dotfiles up to date for use on an OSX d
 * Mou
 * Chrome
 * VirtualBox
-* Alfred 2
 * Spectacle
 * SmoothMouse
 * Slack
 * Spotify
-* 1Password4
+* 1Password 6
