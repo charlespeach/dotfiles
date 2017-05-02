@@ -10,3 +10,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[alias]
+  freshness = "!f() { git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:cyan)%(refname:short)%(color:reset) | %(committerdate:relative)%(color:reset) | %(subject)' | column -s '|' -t; }; f"
