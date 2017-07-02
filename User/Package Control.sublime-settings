@@ -11,7 +11,12 @@
 		"Emmet",
 		"Git",
 		"GitGutter",
+		"Haml",
+		"Jinja2",
+		"JSON Reindent",
 		"Package Control",
+		"Sass",
+		"SassBeautify",
 		"SCSS",
 		"Theme - Afterglow"
 	]

@@ -12,7 +12,7 @@
 		"node_modules",
 		"javascripts/generated"
 	],
-	"font_size": 16,
+	"font_size": 22,
 	"highlight_line": true,
 	"ignored_packages":
 	[
