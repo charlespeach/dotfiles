@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Babel",
+		"BeautifyRuby",
 		"Better CoffeeScript",
 		"BracketHighlighter",
 		"Emmet",
@@ -14,6 +15,7 @@
 		"Haml",
 		"Jinja2",
 		"JSON Reindent",
+		"JsPrettier",
 		"Package Control",
 		"Sass",
 		"SassBeautify",

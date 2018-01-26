@@ -5,24 +5,26 @@
 		"node_modules/*"
 	],
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"folder_exclude_patterns":
 	[
 		".git",
 		"node_modules",
-		"javascripts/generated"
+		"javascripts/generated",
+		"vendor/bundle/",
+		"log/"
 	],
-	"font_size": 22,
+	"font_size": 24,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
 	"remember_open_files": true,
 	"save_on_focus_lost": true,
 	"tab_size": 2,
 	"tabs_small": true,
-	"theme": "Afterglow.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,

@@ -37,4 +37,5 @@ export NVM_ROOT="$HOME/.nvm"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+eval "$(pipenv --completion)"
 [ -s "$NVM_ROOT/nvm.sh" ] && . "$NVM_ROOT/nvm.sh"
