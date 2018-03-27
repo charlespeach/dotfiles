@@ -2,14 +2,13 @@
 This is a online backup/place to keep my dotfiles up to date for use on an OSX development environment.
 
 ## Applications I can't live without
-* Sublime Text 3
-* ohmyzsh
 * iTerm 2
-* Mou
+* ohmyzsh
+* Sublime Text 3
 * Chrome
 * VirtualBox
 * Spectacle
-* SmoothMouse
+* SmoothMouse (Well untill macOS Sierra, sadly now discontinued 😢)
 * Slack
 * Spotify
 * 1Password 6
