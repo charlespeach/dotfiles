@@ -2,7 +2,8 @@
 	"binary_file_patterns":
 	[
 		"dist/*",
-		"node_modules/*"
+		"node_modules/*",
+		"app/assets/webpack/webpack-bundle.js"
 	],
 	"bold_folder_labels": true,
 	"folder_exclude_patterns":
@@ -11,9 +12,10 @@
 		"node_modules",
 		"javascripts/generated",
 		"vendor/bundle/",
-		"log/"
+		"log/",
+		"tmp/",
 	],
-	"font_size": 24,
+	"font_size": 18,
 	"highlight_line": true,
 	"ignored_packages":
 	[
