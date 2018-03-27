@@ -7,9 +7,9 @@
 [color]
   ui = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 [alias]
   # https://gist.github.com/Aupajo/d0f02dd24f2b460922561b5611bf8989
   freshness = "!f() { git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:cyan)%(refname:short)%(color:reset) | %(committerdate:relative)%(color:reset) | %(subject)' | column -s '|' -t; }; f"
