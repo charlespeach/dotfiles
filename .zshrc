@@ -17,6 +17,7 @@ alias multi-win="defaults write com.apple.dock single-app -bool false && killall
 
 # Quick jumps
 alias ml="cd ~/Melon/"
+alias rei="cd ~/reinteractive"
 alias pj="cd ~/Projects/"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -37,5 +38,5 @@ export NVM_ROOT="$HOME/.nvm"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-eval "$(pipenv --completion)"
+#eval "$(pipenv --completion)"
 [ -s "$NVM_ROOT/nvm.sh" ] && . "$NVM_ROOT/nvm.sh"
