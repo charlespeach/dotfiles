@@ -22,4 +22,7 @@ chflags nohidden ~/Library
 mkdir ~/Desktop/Screenshots
 defaults write com.apple.screencapture location ~/Desktop/Screenshots
 
+# After installing Sublime Text, symlink to bin
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
 ## Some extra stuff (DNS Masq etc) from here https://mallinson.ca/osx-web-development/
