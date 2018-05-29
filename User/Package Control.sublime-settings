@@ -21,6 +21,8 @@
 		"Sass",
 		"SassBeautify",
 		"SCSS",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
 		"Theme - Afterglow"
 	]
 }

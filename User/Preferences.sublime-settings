@@ -13,7 +13,7 @@
 		"javascripts/generated",
 		"vendor/bundle/",
 		"log/",
-		"tmp/",
+		"tmp/"
 	],
 	"font_size": 18,
 	"highlight_line": true,
