@@ -1,0 +1,6 @@
+// SublimeLinter Settings - User
+{
+  "syntax_map": {
+    "javascript (babel)": "javascript",
+  }
+}
