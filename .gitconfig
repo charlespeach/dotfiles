@@ -2,7 +2,7 @@
   name = Charles Peach
   email = me@charlespeach.com
 [core]
-  editor = subl -n -w
+  editor = code
   excludesfile = ~/.dotfiles/.gitignore_global
 [color]
   ui = true
