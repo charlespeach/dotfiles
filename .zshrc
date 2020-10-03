@@ -17,8 +17,6 @@ alias single-win="defaults write com.apple.dock single-app -bool true && killall
 alias multi-win="defaults write com.apple.dock single-app -bool false && killall Dock"
 
 # Quick jumps
-alias ml="cd ~/Melon/"
-alias rei="cd ~/reinteractive"
 alias pj="cd ~/Projects/"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -34,12 +32,11 @@ export PATH=~/bin:$PATH
 # Initialize language version managers
 export RBENV_ROOT=~/.rbenv
 export PYENV_ROOT=~/.pyenv
-export NVM_ROOT="$HOME/.nvm"
+export NVM_ROOT=~/.nvm
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 #eval "$(pipenv --completion)"
-[ -s "$NVM_ROOT/nvm.sh" ] && . "$NVM_ROOT/nvm.sh"
-[[ -f /Users/charlespeach/.sentinel/current/bin/sentinel ]] && eval "$(/Users/charlespeach/.sentinel/current/bin/sentinel init -)"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#[ -s "$NVM_ROOT/nvm.sh" ] && . "$NVM_ROOT/nvm.sh"
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
