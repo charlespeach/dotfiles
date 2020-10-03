@@ -18,6 +18,13 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 12
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+# Turn on some menu extras
+defaults write com.apple.systemuiserver menuExtras -array \
+"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+"/System/Library/CoreServices/Menu Extras/Volume.menu"
+# Changes will not take effect until you restart the SystemUIServer
+killall SystemUIServer
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
