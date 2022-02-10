@@ -1,6 +1,6 @@
 ZSH_DISABLE_COMPFIX=true
 
-ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 ## Generic aliases
@@ -18,37 +18,38 @@ alias gitconfig="code $HOME/.gitconfig"
 alias weather="curl wttr.in/palmerston+north"
 
 ## Quick jumps
-alias pj="cd $HOME/Projects/"
-alias fl="cd $HOME/Flux/"
+alias pj="cd $HOME/Projects"
+alias src="cd $HOME/src"
 
 plugins=(git github rails ruby bundler)
 
-# export PATH=/usr/local/bin:$PATH
-# export PATH=/usr/local/sbin:$PATH
-# export PATH=~/bin:$PATH
+source $ZSH/oh-my-zsh.sh
+
+export GPG_TTY=$(tty)
 
 ## Initialize language version managers
 export RBENV_ROOT="$HOME/.rbenv"
 export PYENV_ROOT="$HOME/.pyenv"
-export NVM_ROOT="$HOME/.nvm"
+export NODENV_ROOT="$HOME/.nodenv"
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="$HOME/.nodenv/bin:$PATH"
 
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# export PATH=/usr/local/bin:$PATH
+# export PATH=/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
+export PATH="$PATH:$HOME/.local/bin"
+export PATH=$PATH:$HOME/bin
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+export GPG_TTY=$(tty)
 
 ## Terminal and shell
-eval "$(starship init zsh)"
-
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+if which starship > /dev/null; then eval "$(starship init zsh)"; fi
+if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# export MAKE="make -j$(nproc)"

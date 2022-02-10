@@ -5,10 +5,6 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.irbrc ~/.irbrc
 
-# Sublime symlinks
-ln -s ~/.dotfiles/editors/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0.02
 
@@ -31,5 +27,3 @@ chflags nohidden ~/Library
 # Store screenshots in subfolder on desktop
 mkdir ~/Desktop/Screenshots
 defaults write com.apple.screencapture location ~/Desktop/Screenshots
-
-## Some extra stuff (DNS Masq etc) from here https://mallinson.ca/osx-web-development/
