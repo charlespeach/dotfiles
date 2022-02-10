@@ -1,6 +1,9 @@
 [user]
   name = Charles Peach
   email = me@charlespeach.com
+  signingkey = 6419F20C44A59FE9
+[commit]
+	gpgsign = true
 [core]
   editor = code -n -w
   excludesfile = ~/.dotfiles/.gitignore_global
