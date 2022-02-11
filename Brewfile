@@ -1,3 +1,6 @@
+tap "homebrew/core"
+tap "homebrew/cask"
+
 # Ruby
 brew "rbenv"
 brew "ruby-build"
