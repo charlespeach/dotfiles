@@ -27,3 +27,5 @@ chflags nohidden ~/Library
 # Store screenshots in subfolder on desktop
 mkdir ~/Desktop/Screenshots
 defaults write com.apple.screencapture location ~/Desktop/Screenshots
+# Change screenshots to jpg so that they are much smaller
+defaults write com.apple.screencapture type jpg
